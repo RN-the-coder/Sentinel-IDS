@@ -1,0 +1,39 @@
+# Virtual environments & caches
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local telemetry / raw alert logs (may contain real IPs)
+ids_alerts.log
+ids_alerts.log.*
+*.pcap
+*.pcapng
+sentinel_status.json
+sentinel_status.tmp
+*.tmp
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Editor / OS generated
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local exports -- potentially contain network metadata
+*.csv
+!docs/example_data/*.csv
+
+# Zipped build outputs
+*.zip
